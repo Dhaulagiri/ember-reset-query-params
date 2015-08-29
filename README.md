@@ -1,6 +1,24 @@
-# Ember-reset-query-params
+# Reset Query Parameters
 
-This README outlines the details of collaborating on this Ember addon.
+[By default](http://guides.emberjs.com/v1.13.0/routing/query-params/#toc_sticky-query-param-values), query params are sticky between route transitions in Ember.  This addon provides a mixin that can be added to a route you want to have reset query params on transition.
+
+# Installation
+
+`ember install ember-reset-query-params`
+
+## Usage
+
+`route.js`
+```javascript
+import Ember from 'ember';
+import ResetQueryParams from 'ember-reset-query-params/mixins/reset-query-params';
+
+export default Ember.Route.extend(ResetQueryParams, {
+});
+
+```
+
+# Development
 
 ## Installation
 

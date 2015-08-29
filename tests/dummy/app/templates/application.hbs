@@ -1,3 +1,19 @@
 <h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+<p>
+  This app demonstrates how this addon will reset query params on transition between routes.  To test, click a With params links from one instrument followed by a No params link from the other instrument.  You should notice that the query params are not persisted.
+</p>
+
+<h3>Guitar Links</h3>
+
+{{#link-to 'guitar' (query-params type="prs" strings="6") class="guitar-with-params"}}With params{{/link-to}}
+{{#link-to 'guitar' class="guitar-no-params"}}No params{{/link-to}}
+
+<h3>Bass Links</h3>
+
+{{#link-to 'bass'  (query-params type="fender" strings="4") class="base-with-params"}}With params{{/link-to}}
+{{#link-to 'bass' class="base-no-params"}}No params{{/link-to}}
+
+<div>
+  {{outlet}}
+</div>
