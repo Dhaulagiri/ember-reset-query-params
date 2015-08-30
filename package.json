@@ -1,7 +1,7 @@
 {
   "name": "ember-reset-query-params",
   "version": "0.1.0",
-  "description": "Reset query params",
+  "description": "An ember addon that will reset query params on route transitions",
   "directories": {
     "doc": "doc",
     "test": "tests"
