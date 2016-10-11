@@ -13,7 +13,7 @@
   },
   "repository": "https://github.com/Dhaulagiri/ember-reset-query-params",
   "engines": {
-    "node": "4.2.0"
+    "node": ">= 4.2.0"
   },
   "author": "Brian Runnells",
   "license": "MIT",
